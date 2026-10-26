@@ -1,0 +1,21 @@
+# Installed packages — recreated by `npm install`
+node_modules/
+
+# Everything the running system creates: the database, the master key, the
+# encrypted backups, the audit copies and the first-run passwords.
+# NEVER commit or share this folder.
+data/
+
+# Settings that may hold the mail password or the master key
+.env
+.env.*
+*.env
+
+# Logs and the files that offline restore tools leave behind
+*.log
+pre-restore-*/
+
+# Screenshots from the optional browser check, and operating-system litter
+shots/
+.DS_Store
+Thumbs.db

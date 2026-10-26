@@ -1,0 +1,26 @@
+{
+  "name": "bouesti-vote-server",
+  "version": "2.0.0",
+  "description": "BOUESTI SUG e-voting system \u2014 Express + SQLite backend, voter portal and role-based administrator dashboard.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server.js",
+    "start:production": "NODE_ENV=production node --disable-warning=ExperimentalWarning server.js",
+    "test": "node --disable-warning=ExperimentalWarning --test tests/*.test.js",
+    "test:browser": "node --disable-warning=ExperimentalWarning tests/browser/run.js",
+    "backup": "node --disable-warning=ExperimentalWarning scripts/backup.js",
+    "drill": "node --disable-warning=ExperimentalWarning scripts/restore-drill.js",
+    "restore": "node --disable-warning=ExperimentalWarning scripts/restore.js",
+    "keys": "node --disable-warning=ExperimentalWarning scripts/keys.js",
+    "admin": "node --disable-warning=ExperimentalWarning scripts/admin-cli.js",
+    "verify-report": "node --disable-warning=ExperimentalWarning scripts/verify-report.js",
+    "verify-audit": "node --disable-warning=ExperimentalWarning scripts/verify-audit.js"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
